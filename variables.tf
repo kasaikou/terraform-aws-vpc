@@ -50,6 +50,7 @@ variable "vpc_gateway_endpoints" {
   type = map(object({
     route_tables = optional(set(string), [])
   }))
+  default = {}
 }
 
 variable "security_groups" {
