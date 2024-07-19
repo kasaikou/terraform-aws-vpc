@@ -1,11 +1,5 @@
-# terraform-kasaikou-awsvpc
-The Terraform module creates AWS VPC.
-
-## Example
-
-```terraform
 module "vpc" {
-  source     = ""
+  source     = "../.."
   name       = "kasaikou-test"
   cidr_block = "10.0.0.0/16"
   subnets = {
@@ -82,5 +76,3 @@ module "vpc" {
     "com.amazonaws.ap-northeast-1.ecr.api" : {}
   }
 }
-
-```
